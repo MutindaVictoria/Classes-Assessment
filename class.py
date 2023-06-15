@@ -26,12 +26,10 @@ class Story:
         self.moral_lesson = moral_lesson
 
     def record_story(self):
-        # implementation to record the oral story
-        pass
+        return f"recorded story is{title}"
 
     def translate_story(self, language):
-        # implementation to translate the story into the specified language
-        pass
+        return f"{title} is translated in {language}"
 class StoryTeller:
     def __init__(self, name, age, language):
         self.name = name
@@ -39,12 +37,9 @@ class StoryTeller:
         self.language = language
 
     def tell_story(self, story):
-        # implementation to tell the specified story
-        pass
-
+        return f"tell story{self.title}for persons age{self.age}"
     def translate_story(self, story, language):
-        # implementation to translate the specified story into the specified language
-        pass
+        return f"translate story {story} to{self.language}"
 class Translator:
     def __init__(self, name, age, source_language, target_language):
         self.name = name
@@ -53,8 +48,7 @@ class Translator:
         self.target_language = target_language
 
     def translate_story(self, story):
-        # implementation to translate the specified story into the target language
-        pass
+        return f"translate {source_language}to {target_language}"
 class Fable(Story):
     def __init__(self, title, length, age_group, moral_lesson, animal_characters):
         super().__init__(title, length, age_group, moral_lesson)
