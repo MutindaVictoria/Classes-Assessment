@@ -13,7 +13,8 @@ class Ancestralstories{
             }
           
             translate(story) {
-              // code to translate story from languageFrom to languageTo
-              return translatedStory;
+              translate=[]
+              translate.push(this.languageTo)
+              return translate;
             }
           } 
